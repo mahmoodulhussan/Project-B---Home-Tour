@@ -26,7 +26,6 @@ public class RoomManager {
 				+ "To the north is a small room, where you can see a piano.");
 		this.rooms[0] = foyer;
 		startingRoom = foyer;	
-		foyer.setExits(rooms[2], null, null, null);
 	
 		Room livingRoom = new Room(
 				"Living Room",
@@ -55,17 +54,24 @@ public class RoomManager {
 				"We sleep in our bed room. Please make up your own" +
 				"long description.");
 		this.rooms[3] = bedRoom;
-//	bedRoom.setExits(null, null, null, rooms[2]);
+		
+		foyer.setExits(rooms[2], null, null, null);
+		library.setExits(null, rooms[1], null, null);
+		livingRoom.setExits(null, null, rooms[3], null);
+		bedRoom.setExits(null, null, null, rooms[0]);
 
+
+//	bedRoom.setExits(null, null, null, rooms[2]);
+		
 
 //	foyer.setExits[0] = ("right", library);
 //	foyer.setExits("left", livingRoom);
-//	livingRoom.setExit("south", foyer);
-//	livingRoom.setExit("north", bedRoom);
-//	library.setExit("south", foyer);
-//	livingRoom.setExit("north", bedRoom);
-//	bedRoom.setExit("left", livingRoom);
-//	bedRoom.setExit("right", library);
+//	livingRoom.setExits("south", foyer);
+//	livingRoom.setExits("north", bedRoom);
+//	library.setExits("south", foyer);
+//	livingRoom.setExits("north", bedRoom);
+//	bedRoom.setExits("left", livingRoom);
+//	bedRoom.setExits("right", library);
 	
 	
 	

@@ -35,9 +35,10 @@ public class Room extends Fixture{
 		this.exits[2] = library;
 		this.exits[3] = bedRoom;
 	}
-	public String getName() {
-		return this.name;
-	}
+}
+//	public String getName() {
+//		return this.name;
+//	}
 //	public void setExit(String string, Room library) {
 //		// TODO Auto-generated method stub
 //		
@@ -48,8 +49,12 @@ public class Room extends Fixture{
 //	}
 //	public void setExit(String string, Room livingRoom) {
 //		// TODO Auto-generated method stub
+//	public char[] getLongDescription() {
+		// TODO Auto-generated method stub
+//		return null;
+//	}
 		
 //	}
 
 	
-}
+//}

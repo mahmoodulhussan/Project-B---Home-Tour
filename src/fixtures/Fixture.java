@@ -1,10 +1,13 @@
 package fixtures;
 
-public class Fixture {
+public abstract class Fixture {
 	
-	 public String shortDescription;
-	 public String name;
-	 public String longDescription;
+	protected String shortDescription;
+	protected String name;
+	protected String longDescription;
+	
+	
+	
 	public String getShortDescription() {
 		return shortDescription;
 	}

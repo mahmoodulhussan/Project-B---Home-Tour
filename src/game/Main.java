@@ -17,6 +17,7 @@ public class Main {
 		
 		do {
 			System.out.println(currentRoom.getName());
+			System.out.println(currentRoom.getShortDescription());
 			System.out.println(currentRoom.getLongDescription());
 
 			System.out.println("Which room do you want to go next? - Use right, left, north, and south options.");

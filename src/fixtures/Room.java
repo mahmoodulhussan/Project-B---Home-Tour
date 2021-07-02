@@ -1,17 +1,15 @@
 package fixtures;
 
 public class Room extends Fixture{
-//	public String name;
-	public Room[] exits = new Room[4];
+
+	private Room[] exits = new Room[4];
 	
 	public Room (String name, String shortDescription, String longDescription) {
 		this.name = name;
 		this.shortDescription = shortDescription;
 		this.longDescription = longDescription;
 	}
-	public Room() {
-		super();
-	}
+
 	
 	public Room getExits(String direction) {
 		switch(direction) {
@@ -36,25 +34,4 @@ public class Room extends Fixture{
 		this.exits[3] = bedRoom;
 	}
 }
-//	public String getName() {
-//		return this.name;
-//	}
-//	public void setExit(String string, Room library) {
-//		// TODO Auto-generated method stub
-//		
-//	}
-//	public void setExit(String string, Room foyer) {
-//		// TODO Auto-generated method stub
-//		this.exits = 
-//	}
-//	public void setExit(String string, Room livingRoom) {
-//		// TODO Auto-generated method stub
-//	public char[] getLongDescription() {
-		// TODO Auto-generated method stub
-//		return null;
-//	}
-		
-//	}
 
-	
-//}

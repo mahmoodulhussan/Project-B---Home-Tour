@@ -21,8 +21,10 @@ public class Room extends Fixture{
 			return exits[2];
 		case "south":
 			return exits[3];
+		case "quit":
+			System.out.println("Good Bye!");
 		default:
-			System.out.println("The only valid directions are: left, right, north, south");
+			System.out.println("Try again!");
 			return null;
 		}
 		

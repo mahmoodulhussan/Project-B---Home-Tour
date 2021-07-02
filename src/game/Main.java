@@ -6,6 +6,7 @@ import fixtures.Room;
 
 
 public class Main {
+	
 	public static void main(String[] args) {
 		
 		RoomManager rm = new RoomManager();
